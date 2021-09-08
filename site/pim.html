@@ -4,9 +4,19 @@
 	<meta charset="utf-8">
 	<title>My Precious Compaions</title>
 	<style type="text/css">
+		body {
+			background: #fcfcfc;
+		}
 		h1 {
 			color: #032491;
-			font-family: Comic Sans MS, Comic Sans, cursive;
+			font-family: Chalkduster, fantasy;
+			text-align: center;
+			font-size: 300%;
+		}
+		p.main-paragraph {
+			font-family: Chalkduster, fantasy;
+			text-align: center;
+			font-size: 150%;
 		}
 		h2.song-list {
 			color: #283618;
@@ -18,7 +28,7 @@
 		section.song-list {
 			background: #FEFAE0;
 			position: relative;
-			margin: 5% 20% 5% 20%;
+			margin: 5% auto 5% auto;
 			padding: 10px;
 			width: 60%;
 			border: 1px solid #bc6c25;
@@ -50,12 +60,55 @@
 		ul.song-list a:active{
 			color: #1c2511;
 		}
+		section.photos {
+			position: relative;
+			display: grid;
+			grid-template-columns: 360px 360px;
+			grid-column-gap: 20px;
+			font-family: Stencil Std, fantasy;
+			border: 2px solid #1d3557;
+			width: 760px;
+			background: #f1faee;
+			position: relative;
+			margin: 5% auto 5% auto;
+			box-sizing: border-box;
+		}
+		section.photos div.images {
+			width: 360px;
+			height: 600px;
+			border: 10px solid #1d3557;
+			overflow: hidden;
+			box-sizing: border-box;
+			background: #457B9D;
+			margin: 10px;
+			align-content: center;
+			position: relative;
+		}
+		section.photos a:link, a:visited {
+			text-decoration: none;
+			text-align: center;
+			color: #ab0c14;
+		}
+
+		#okan-img img, #aykut-img img, #mustafa-img img, #furkan-img img {
+			border: 2px solid #1d3557;
+
+		}
+
+		#photos-header {
+			text-align: center;
+			grid-column: 1 / span 2;
+			font-size: 200%;
+			color: #e63946;
+		}
+
+
 
 	</style>
 </head>
 <body>
 	<h1>Hello My Precious Friends</h1>
-	I am glad you opened my site and I will make sure that I will update this page continuously with interesting contents. Good by my beloveds.
+	<p class="main-paragraph">I am glad you opened my site and I will make sure that I will update this page continuously with interesting contents. Good by my beloveds.</p>
 
 	<section class="song-list">
 		<h2 class="song-list">Songs To Be Listened</h2>
@@ -69,15 +122,28 @@
 		</p>
 	</section>
 
-	<h2>Very Important Members of the Family (VIMF)</h2>
-	<div>Click to images for more information.</div>
-		<h3>Honorary Member</h3>
-		<a href="https://www.linkedin.com/in/okan-bulgur-534b191b8/" target="_blank" > <img src="pim-images/okan-pim.jpeg" width="280" height="455" alt="Okan Bulgur"> </a>
-		<h3>The Pilot NAK Big Boss</h3>
-		<a href="https://www.linkedin.com/in/pilotaykutkarsli/" target="_blank" > <img src="pim-images/aykut-pim.jpeg" width="280" height="400" alt="Nedim Aykut Karslı"></a>
-		<h3>PIM CEO</h3>
-		<a href="https://www.linkedin.com/in/mustafa-o%C4%9Fuz-karsl%C4%B1-166380172/" target="_blank" > <img src="pim-images/mustafa-pim.jpeg" width="280" height="500" alt="Mustafa Oğuz Karslı"></a>
-		<h3>Anonymous Hacker</h3>
-		<a href="https://www.linkedin.com/in/furkan-bulgur-1294a71a3/" target="_blank" > <img src="pim-images/furkan-pim.jpeg" width="280" height="420" alt="Furkan Bulgur"></a>
+	<section class="photos">
+		<h2 id="photos-header">Very Important Members of the Family (VIMF)</h2>
+		
+		<a href="https://www.linkedin.com/in/okan-bulgur-534b191b8/" target="_blank" > 
+			<div id="okan-img" class="images">
+				<h3>Honorary Member</h3>
+				<img src="pim-images/okan-pim.jpeg" width="280" height="460" alt="Okan Bulgur" ></div> </a>
+
+		<a href="https://www.linkedin.com/in/pilotaykutkarsli/" target="_blank" > 
+			<div id="aykut-img" class="images">
+				<h3>The Pilot NAK Big Boss</h3>
+				<img src="pim-images/aykut-pim.jpeg" width="280" height="400" alt="Nedim Aykut Karslı" ></div></a>
+
+		<a href="https://www.linkedin.com/in/mustafa-o%C4%9Fuz-karsl%C4%B1-166380172/" target="_blank"> 
+			<div id="mustafa-img" class="images">
+				<h3>PIM CEO</h3>
+				<img src="pim-images/mustafa-pim.jpeg" width="280" height="400" alt="Mustafa Oğuz Karslı" ></div></a>
+
+		<a href="https://www.linkedin.com/in/furkan-bulgur-1294a71a3/" target="_blank" > 	<div id="furkan-img" class="images">
+				<h3>Anonymous Hacker</h3>
+				<img src="pim-images/furkan-pim.jpeg" width="280" height="420" alt="Furkan Bulgur"></div></a>
+	</section>
+	
 </body>
 </html>
